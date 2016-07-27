@@ -15,6 +15,7 @@ $(document).ready(function(){
 		
 		console.log("dataaaaaaaaaaaaaaa",data);
 
-		console.log("datastring",datastring)
+		console.log("datastring",datastring);
+		$.get('')
 	})
 })

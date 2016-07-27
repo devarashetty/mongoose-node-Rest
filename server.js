@@ -58,3 +58,16 @@ app.get('/about', function(req, res) {
     		console.log("error",err);
     });
 });
+
+app.get('/testing',function(req,res){
+	res.write("fooo");
+	res.write("barr");
+	res.end();
+})
+
+app.get('/home',function(req,res){
+   res.sendfile(__dirname+'/public/home.html',function(err){
+        if(err)
+            console.log("error",err);
+    });
+})
