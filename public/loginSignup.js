@@ -1,4 +1,3 @@
-console.log(123213213123);
 $(document).ready(function(){
 	$("#btn-signup").click(function(event){
 		event.preventDefault();

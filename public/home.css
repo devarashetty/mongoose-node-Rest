@@ -1,57 +1,30 @@
+
 header {
     display: block;
     position: relative;
 }
-header .header-parallax-wrap{
-	height: 350px
-}
-.header-parallax-wrap{
-    position: relative;
-    overflow: hidden;
-    background-color: #fff;
+
+
+img{
+    width: 100%;
+    height:90%;
 }
 
-#header-image-parallax{
-	position: relative;
-    z-index: 0;
-    background: none;
-    height:500px;
-}
-.backstretch{
-    left: 0px;
-    top: 0px;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    height: 500px;
-    width: 1351px;
-    z-index: -999998;
-    position: absolute;
+.header-inner.clearfix.tn-container{
+   position: absolute;
+   bottom: 50%;
+   left: 50%; 
 }
 
-img {
-	    position: absolute;
-    margin: 0px;
-    padding: 0px;
-    border: none;
-    width: 1476.92px;
-    height: 500px;
-    max-height: none;
-    max-width: none;
-    z-index: -999999;
-    left: -62.9615px;
-    top: 0px;
-    transform: translate3d(0px, 9px, 0px);
+#test{
+    color:red;
 }
 
-.header-background-image.header-wrap .header-inner{
-	margin-top: 0;
-	margin-bottom: 0
+.fa-facebook,.fa-twitter,.fa-pinterest,.fa-heart,.fa-instagram{
+    color: white
 }
 
-.header-wrap.header-background-image .header-inner{
-	    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%)
+.social-icons a{
+    margin-right: 40px;
+    position: center
 }
