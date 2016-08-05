@@ -1,6 +1,9 @@
 var express = require('express');
 var path = require('path');
+
+
 // Mongoose import
+var bodyParser = require('body-parser')
 var mongoose = require('mongoose');
 
 var router = express.Router();
@@ -16,9 +19,10 @@ mongoose.connect('mongodb://127.0.0.1', function (error) {
 // Mongoose Schema definition
 var Schema = mongoose.Schema;
 var UserSchema = new Schema({
-    first_name: String,
-    last_name: String,
-    email: String
+    firstname: String,
+    lastname: String,
+    email: String,
+    passwd:String
 });
 
 // Mongoose Model definition
@@ -27,6 +31,10 @@ var User = mongoose.model('users', UserSchema);
 // Bootstrap express
 var app = express();
 // URLS management
+app.use( bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+})); 
 
 
 app.get('/', function (req, res) {
@@ -50,12 +58,18 @@ app.get('/users/:email', function (req, res) {
 
 app.listen(4000);
 app.use(express.static('public'));
+
 app.get('/about', function(req, res) {
-    console.log("-----------------------------",res.sendfile);
-    
     res.sendfile(__dirname+'/public/loginSignup.html',function(err){
     	if(err)
     		console.log("error",err);
+    });
+});
+
+app.get('/userlist', function(req, res) {
+    res.sendfile(__dirname+'/public/usersList.html',function(err){
+        if(err)
+            console.log("error",err);
     });
 });
 
@@ -70,4 +84,17 @@ app.get('/home',function(req,res){
         if(err)
             console.log("error",err);
     });
+})
+
+app.post('/checkingsentdata',function(req,res){
+    console.log("-------------------",req.body);
+    var insertUser = new User(req.body)
+    
+    console.log("insertUser",insertUser);
+
+    insertUser.save(function(err    ){
+      if(err) 
+        console.log("err",err);
+    })
+    
 })

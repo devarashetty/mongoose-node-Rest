@@ -3,14 +3,18 @@
       <!-- SCROLLS -->
       <!-- load bootstrap and fontawesome via CDN -->
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-      <link rel="stylesheet" href="home.css"> 
+      <link rel="stylesheet" href="home.css" >
+      <link rel="stylesheet" href = "https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" >
+      <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+
       <!-- SPELLS -->
       <!-- load angular and angular route via CDN -->
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-      <script src="script.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>
       <header id="header" class=" header-wrap header-background-image is-header-parallax">
@@ -30,7 +34,7 @@
                 </a>
                 <a>
                   <i class="fa fa-pinterest"></i>
-                </a>
+                </  a>
                 <a>
                   <i class="fa fa-heart"></i>
                 </a>
@@ -41,10 +45,97 @@
           </div>
         </div>
 
-      </header>
-      <nav id="navigation" class="is-sticky-nav clearfix"></nav>
-      <div></div>
-      <div></div>
-      <footer></footer>
+      </header> 
+      <nav id="navigation" class="is-sticky-nav clearfix">
+         <div class="navbar">
+           <ul class="mainmenu">              
+              <ol class="dropdown">
+                <a href="http://www.facebook.com" class="dropbtn">Facebook</a>
+                <div class="dropdown-content">
+                  <li>one</li> 
+                  <li>one</li>
+                  <li>one</li>
+                  <li>one</li>
+                </div>
+              </ol>
+              <ol class="dropdown">
+                <a href="http://www.facebook.com" class="dropbtn">Facebook</a>
+                <div class="dropdown-content">
+                  <li>one</li> 
+                  <li>one</li>
+                  <li>one</li>
+                  <li>one</li>
+                </div>
+              </ol>
+              <ol class="dropdown">
+                <a href="http://www.facebook.com" class="dropbtn">Facebook</a>
+                <div class="dropdown-content">
+                  <li>one</li> 
+                  <li>one</li>
+                  <li>one</li>
+                  <li>one</li>
+                </div>
+              </ol>
+           </ul>
+
+         </div>
+      </nav>
+      
+      <div class="featured-area">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="http://media.hollywood.com/images/638x425/1764823.JPG" alt="Chania" width="460" height="345">
+            </div>
+
+            <div class="item">
+              <img src="http://kingoftheflatscreen.com/wp-content/uploads/2015/09/Cobie-Smulders-cobie-smulders-31078906-1024-768.png" alt="Chania" width="460" height="345">
+            </div>
+          
+            <div class="item">
+              <img src="http://www.imagesyoulike.com/images/v/canvas40x30/v3857.jpg" alt="Flower" width="460" height="345">
+            </div>
+
+            <div class="item">
+              <img src="http://www.imagesyoulike.com/images/v/canvas40x30/v3857.jpg" alt="Flower" width="460" height="345">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="row">
+         <div class="col-md-8">
+            <div class="row">
+              
+            </div>
+            <div class="row">
+              
+            </div>
+         </div> 
+         <div class="col-md-4"></div>
+      </div>
+      
+      <footer>
+        
+      </footer>
     </body>
     </html>
